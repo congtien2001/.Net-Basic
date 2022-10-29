@@ -61,11 +61,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="addnhom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="addnhom.Designer.cs">
+      <DependentUpon>addnhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addlienlac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addlienlac.Designer.cs">
+      <DependentUpon>addlienlac.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\AppDBContext.cs" />
     <Compile Include="Model\Nhom.cs" />
@@ -76,6 +82,12 @@
     <Compile Include="Services\SinhVienServices.cs" />
     <Compile Include="ViewModel\NhomViewModel.cs" />
     <Compile Include="ViewModel\SinhVienViewModel.cs" />
+    <EmbeddedResource Include="addlienlac.resx">
+      <DependentUpon>addlienlac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnhom.resx">
+      <DependentUpon>addnhom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

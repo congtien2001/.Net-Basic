@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.btnthemnhom = new System.Windows.Forms.ToolStripButton();
+            this.btnxoanhom = new System.Windows.Forms.ToolStripButton();
+            this.btnthemlienlac = new System.Windows.Forms.ToolStripButton();
+            this.btnxoalienlac = new System.Windows.Forms.ToolStripButton();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,68 +44,72 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.nhomViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tenNhomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sinhVienViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenGoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinhVienViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tenNhomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhomViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienViewModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4,
+            this.btnthemnhom,
+            this.btnxoanhom,
+            this.btnthemlienlac,
+            this.btnxoalienlac,
             this.toolStripTextBox1,
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(918, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(982, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // btnthemnhom
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(115, 24);
-            this.toolStripButton1.Text = "Thêm Nhóm";
+            this.btnthemnhom.Image = ((System.Drawing.Image)(resources.GetObject("btnthemnhom.Image")));
+            this.btnthemnhom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthemnhom.Name = "btnthemnhom";
+            this.btnthemnhom.Size = new System.Drawing.Size(115, 24);
+            this.btnthemnhom.Text = "Thêm Nhóm";
+            this.btnthemnhom.Click += new System.EventHandler(this.btnthemnhom_Click);
             // 
-            // toolStripButton2
+            // btnxoanhom
             // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(104, 24);
-            this.toolStripButton2.Text = "Xóa Nhóm";
+            this.btnxoanhom.Image = ((System.Drawing.Image)(resources.GetObject("btnxoanhom.Image")));
+            this.btnxoanhom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoanhom.Name = "btnxoanhom";
+            this.btnxoanhom.Size = new System.Drawing.Size(104, 24);
+            this.btnxoanhom.Text = "Xóa Nhóm";
+            this.btnxoanhom.Click += new System.EventHandler(this.btnxoanhom_Click);
             // 
-            // toolStripButton3
+            // btnthemlienlac
             // 
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(127, 24);
-            this.toolStripButton3.Text = "Thêm Liên Lạc";
+            this.btnthemlienlac.Image = ((System.Drawing.Image)(resources.GetObject("btnthemlienlac.Image")));
+            this.btnthemlienlac.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthemlienlac.Name = "btnthemlienlac";
+            this.btnthemlienlac.Size = new System.Drawing.Size(127, 24);
+            this.btnthemlienlac.Text = "Thêm Liên Lạc";
+            this.btnthemlienlac.Click += new System.EventHandler(this.btnthemlienlac_Click);
             // 
-            // toolStripButton4
+            // btnxoalienlac
             // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(116, 24);
-            this.toolStripButton4.Text = "Xóa Liên Lạc";
+            this.btnxoalienlac.Image = ((System.Drawing.Image)(resources.GetObject("btnxoalienlac.Image")));
+            this.btnxoalienlac.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoalienlac.Name = "btnxoalienlac";
+            this.btnxoalienlac.Size = new System.Drawing.Size(116, 24);
+            this.btnxoalienlac.Text = "Xóa Liên Lạc";
+            this.btnxoalienlac.Click += new System.EventHandler(this.Btnxoalienlac);
             // 
             // toolStripTextBox1
             // 
@@ -113,6 +117,7 @@
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(200, 27);
+            this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
             // toolStripLabel1
             // 
@@ -157,7 +162,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(591, 284);
+            this.dataGridView2.Size = new System.Drawing.Size(653, 284);
             this.dataGridView2.TabIndex = 2;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -198,23 +203,6 @@
             this.label4.Size = new System.Drawing.Size(97, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tên gọi";
-            // 
-            // nhomViewModelBindingSource
-            // 
-            this.nhomViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.NhomViewModel);
-            // 
-            // tenNhomDataGridViewTextBoxColumn
-            // 
-            this.tenNhomDataGridViewTextBoxColumn.DataPropertyName = "TenNhom";
-            this.tenNhomDataGridViewTextBoxColumn.HeaderText = "TenNhom";
-            this.tenNhomDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenNhomDataGridViewTextBoxColumn.Name = "tenNhomDataGridViewTextBoxColumn";
-            this.tenNhomDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tenNhomDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // sinhVienViewModelBindingSource
-            // 
-            this.sinhVienViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.SinhVienViewModel);
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -261,11 +249,28 @@
             this.soDienThoaiDataGridViewTextBoxColumn.ReadOnly = true;
             this.soDienThoaiDataGridViewTextBoxColumn.Width = 125;
             // 
+            // sinhVienViewModelBindingSource
+            // 
+            this.sinhVienViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.SinhVienViewModel);
+            // 
+            // tenNhomDataGridViewTextBoxColumn
+            // 
+            this.tenNhomDataGridViewTextBoxColumn.DataPropertyName = "TenNhom";
+            this.tenNhomDataGridViewTextBoxColumn.HeaderText = "TenNhom";
+            this.tenNhomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenNhomDataGridViewTextBoxColumn.Name = "tenNhomDataGridViewTextBoxColumn";
+            this.tenNhomDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenNhomDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nhomViewModelBindingSource
+            // 
+            this.nhomViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.NhomViewModel);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 514);
+            this.ClientSize = new System.Drawing.Size(982, 514);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -280,8 +285,8 @@
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienViewModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,10 +295,10 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btnthemnhom;
+        private System.Windows.Forms.ToolStripButton btnxoanhom;
+        private System.Windows.Forms.ToolStripButton btnthemlienlac;
+        private System.Windows.Forms.ToolStripButton btnxoalienlac;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ToolTip toolTip1;

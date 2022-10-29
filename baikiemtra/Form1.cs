@@ -18,9 +18,25 @@ namespace baikiemtra
         public Form1()
         {
             InitializeComponent();
-            
-        }
+            NapDSNhom();
 
+
+            NapDSSinhVien();
+        }
+        public NhomViewModel selectedNhom
+        {
+            get
+            {
+                return nhomViewModelBindingSource.Current as NhomViewModel;
+            }
+        }
+        public SinhVienViewModel selectedSinhVien
+        {
+            get
+            {
+                return sinhVienViewModelBindingSource.Current as SinhVienViewModel;
+            }
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -33,12 +49,12 @@ namespace baikiemtra
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            NapDSSinhVien();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -46,21 +62,6 @@ namespace baikiemtra
 
         }
 
-        public SinhVienViewModel selectedSinhVien
-        {
-            get
-            {
-                return sinhVienViewModelBindingSource.Current as SinhVienViewModel;
-            }
-        }
-
-        public NhomViewModel selectedNhom
-        {
-            get
-            {
-                return nhomViewModelBindingSource.Current as NhomViewModel;
-            }
-        }
 
 
         void NapDSNhom()
@@ -74,10 +75,61 @@ namespace baikiemtra
         {
             if (selectedNhom != null)
             {
-                var ls = SinhVienServices.GetList(selectedNhom.ID);
+                var ls = SinhVienService.GetList(selectedNhom.ID);
                 sinhVienViewModelBindingSource.DataSource = ls;
                 dataGridView2.DataSource = sinhVienViewModelBindingSource;
             }
+
+        }
+
+        private void btnthemnhom_Click(object sender, EventArgs e)
+        {
+            var a = new addnhom();
+            var rs = a.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+                NapDSNhom();
+            }
+        }
+
+        private void btnxoanhom_Click(object sender, EventArgs e)
+        {
+            if (selectedNhom != null)
+            {
+                var rs = MessageBox.Show("Bạn có chắc là muốn xóa?", "Chú ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (rs == DialogResult.OK)
+                {
+                    NhomServices.RemoveNhom(selectedNhom);
+                    NapDSNhom();
+                }
+            }
+        }
+
+        private void btnthemlienlac_Click(object sender, EventArgs e)
+        {
+            var a = new addlienlac();
+            var rs = a.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+                NapDSSinhVien();
+            }
+        }
+
+        private void Btnxoalienlac(object sender, EventArgs e)
+        {
+            if (selectedSinhVien != null)
+            {
+                var rs = MessageBox.Show("Bạn có chắc là muốn xóa?", "Chú ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (rs == DialogResult.OK)
+                {
+                    SinhVienService.RemoveSinhVien(selectedSinhVien);
+                    NapDSSinhVien();
+                }
+            }
+        }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
