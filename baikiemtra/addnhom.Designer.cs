@@ -72,6 +72,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(244, 22);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addnhom
             // 
@@ -84,6 +85,7 @@
             this.Controls.Add(this.label1);
             this.Name = "addnhom";
             this.Text = "Thêm nhóm";
+            this.Load += new System.EventHandler(this.addnhom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

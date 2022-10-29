@@ -38,25 +38,25 @@
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tenNhomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhomViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenGoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sinhVienViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tenNhomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhomViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienViewModelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -71,7 +71,7 @@
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(982, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(982, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -80,7 +80,7 @@
             this.btnthemnhom.Image = ((System.Drawing.Image)(resources.GetObject("btnthemnhom.Image")));
             this.btnthemnhom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnthemnhom.Name = "btnthemnhom";
-            this.btnthemnhom.Size = new System.Drawing.Size(115, 24);
+            this.btnthemnhom.Size = new System.Drawing.Size(115, 28);
             this.btnthemnhom.Text = "Thêm Nhóm";
             this.btnthemnhom.Click += new System.EventHandler(this.btnthemnhom_Click);
             // 
@@ -89,7 +89,7 @@
             this.btnxoanhom.Image = ((System.Drawing.Image)(resources.GetObject("btnxoanhom.Image")));
             this.btnxoanhom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnxoanhom.Name = "btnxoanhom";
-            this.btnxoanhom.Size = new System.Drawing.Size(104, 24);
+            this.btnxoanhom.Size = new System.Drawing.Size(104, 28);
             this.btnxoanhom.Text = "Xóa Nhóm";
             this.btnxoanhom.Click += new System.EventHandler(this.btnxoanhom_Click);
             // 
@@ -98,7 +98,7 @@
             this.btnthemlienlac.Image = ((System.Drawing.Image)(resources.GetObject("btnthemlienlac.Image")));
             this.btnthemlienlac.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnthemlienlac.Name = "btnthemlienlac";
-            this.btnthemlienlac.Size = new System.Drawing.Size(127, 24);
+            this.btnthemlienlac.Size = new System.Drawing.Size(127, 28);
             this.btnthemlienlac.Text = "Thêm Liên Lạc";
             this.btnthemlienlac.Click += new System.EventHandler(this.btnthemlienlac_Click);
             // 
@@ -107,7 +107,7 @@
             this.btnxoalienlac.Image = ((System.Drawing.Image)(resources.GetObject("btnxoalienlac.Image")));
             this.btnxoalienlac.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnxoalienlac.Name = "btnxoalienlac";
-            this.btnxoalienlac.Size = new System.Drawing.Size(116, 24);
+            this.btnxoalienlac.Size = new System.Drawing.Size(116, 28);
             this.btnxoalienlac.Text = "Xóa Liên Lạc";
             this.btnxoalienlac.Click += new System.EventHandler(this.Btnxoalienlac);
             // 
@@ -116,14 +116,14 @@
             this.toolStripTextBox1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(200, 27);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(200, 31);
             this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(116, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(116, 28);
             this.toolStripLabel1.Text = "Nhập từ cần tìm";
             // 
             // dataGridView1
@@ -143,6 +143,19 @@
             this.dataGridView1.Size = new System.Drawing.Size(308, 478);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // tenNhomDataGridViewTextBoxColumn
+            // 
+            this.tenNhomDataGridViewTextBoxColumn.DataPropertyName = "TenNhom";
+            this.tenNhomDataGridViewTextBoxColumn.HeaderText = "TenNhom";
+            this.tenNhomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenNhomDataGridViewTextBoxColumn.Name = "tenNhomDataGridViewTextBoxColumn";
+            this.tenNhomDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenNhomDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nhomViewModelBindingSource
+            // 
+            this.nhomViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.NhomViewModel);
             // 
             // dataGridView2
             // 
@@ -165,44 +178,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(653, 284);
             this.dataGridView2.TabIndex = 2;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(331, 440);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Email:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(331, 480);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Số điện thoại:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(331, 401);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Địa chỉ:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(334, 338);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 29);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tên gọi";
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -253,18 +228,43 @@
             // 
             this.sinhVienViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.SinhVienViewModel);
             // 
-            // tenNhomDataGridViewTextBoxColumn
+            // label1
             // 
-            this.tenNhomDataGridViewTextBoxColumn.DataPropertyName = "TenNhom";
-            this.tenNhomDataGridViewTextBoxColumn.HeaderText = "TenNhom";
-            this.tenNhomDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenNhomDataGridViewTextBoxColumn.Name = "tenNhomDataGridViewTextBoxColumn";
-            this.tenNhomDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tenNhomDataGridViewTextBoxColumn.Width = 125;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(331, 440);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Email:";
             // 
-            // nhomViewModelBindingSource
+            // label2
             // 
-            this.nhomViewModelBindingSource.DataSource = typeof(baikiemtra.ViewModel.NhomViewModel);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(331, 480);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Số điện thoại:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(331, 401);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Địa chỉ:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(334, 338);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 29);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Tên gọi";
             // 
             // Form1
             // 
@@ -284,9 +284,9 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienViewModelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhomViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
